@@ -67,17 +67,17 @@ variable "SECRET_ACCESS_KEY"
 
 variable "hyperflow_master_container"
 {
-  default = "krysp89/hyperflow-master-plugin:latest"
+  default = "annasla95/hyperflow-master-plugin:latest"
 }
 
 variable "hyperflow_worker_container"
 {
-  default = "krysp89/hyperflow-worker-nfs:latest"
+  default = "annasla95/hyperflow-worker-nfs:latest"
 }
 
 variable "ec2_status_reporter"
 {
-  default = "krysp89/hyperflow-ec2-status-reporter:latest"
+  default = "annasla95/hyperflow-ec2-status-reporter:latest"
 }
 
 #change to "ENABLED" for feature to start working 
@@ -90,3 +90,10 @@ variable "nfs_mount"
 {
   default = ""
 }
+
+variable "prometheus_pushgateway"
+{
+  default = ""
+}
+
+variable "ssh_private_key_path" {}

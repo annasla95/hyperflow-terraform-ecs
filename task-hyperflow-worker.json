@@ -29,6 +29,10 @@
         {
           "name": "NFS_MOUNT",
           "value": "${nfs_mount}"
+        },
+        {
+          "name": "PROMETHEUS_PUSHGATEWAY",
+          "value": "${prometheus_pushgateway}"
         }
       ],
       "mountPoints": [
