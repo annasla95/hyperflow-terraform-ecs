@@ -105,7 +105,7 @@ resource "aws_instance" "prometheus-grafana" {
     inline = [
       "sudo chmod +x /tmp/install_docker.sh",
       "/tmp/install_docker.sh",
-      "git clone https://github.com/annasla95/hyperflow-grafana.git",
+      "git clone https://github.com/annasla95/hyperflow-grafana-prometheus.git",
       "cd hyperflow-grafana-prometheus/",
       "sudo HYPERFLOW_HOST=${aws_instance.hyperflowmaster.public_ip} PROMETHEUS_GATEWAY_HOST=${aws_instance.prometheus-pushgateway.public_ip} docker-compose up -d",
     ]
