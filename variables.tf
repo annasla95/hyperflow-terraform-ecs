@@ -67,17 +67,17 @@ variable "SECRET_ACCESS_KEY"
 
 variable "hyperflow_master_container"
 {
-  default = "annasla95/hyperflow-master-plugin:latest"
+  default = "demrod95/hyperflow-master-plugin:latest"
 }
 
 variable "hyperflow_worker_container"
 {
-  default = "annasla95/hyperflow-worker-nfs:latest"
+  default = "demrod95/hyperflow-amqp-executor"
 }
 
 variable "ec2_status_reporter"
 {
-  default = "annasla95/hyperflow-ec2-status-reporter:latest"
+  default = "demrod95/hyperflow-ec2-status-reporter:latest"
 }
 
 #change to "ENABLED" for feature to start working 

@@ -1,0 +1,5 @@
+ACCESS_KEY= ""
+SECRET_ACCESS_KEY = ""
+key_pair_name = ""
+ssh_private_key_path = ""
+ecs_region = "us-east-1"
